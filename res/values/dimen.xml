@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="head_room">150dp</dimen>
+    <dimen name="button_gap">10dp</dimen>
+    
+</resources>

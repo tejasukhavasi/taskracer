@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Task Racer</string>
+    <string name="menu_settings">Settings</string>
+    <string name="race_me">Race me up!</string>
+    <string name="Statistics">How did I do?</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_new_race">NewRace</string>
+    <string name="title_activity_statistics">Statistics</string>
+    <string name="title_activity_go_carting">GoCarting</string>
+    <string name="title_activity_fire_in_the_home">FireInTheHome</string>
+    <string name="stats_msg">Statistics and history go here</string>
+    <string name="options_msg">Options specific to this race go here</string>
+    <string name="race_now">Race Now!</string>
+    <string name="race_page">The Live Race Page</string>
+    <string name="title_activity_live_race">LiveRace</string>
+
+</resources>

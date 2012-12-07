@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" 
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/race_me"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/head_room"
+        android:text="@string/race_me"
+        android:onClick="race_me_up"/>
+
+    <Button
+        android:id="@+id/Statistics"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/button_gap"
+        android:gravity="center"
+        android:text="@string/Statistics"
+        android:onClick="statistics" /> 
+
+</LinearLayout>

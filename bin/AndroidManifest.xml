@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myfirstapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="16" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.myfirstapp.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.myfirstapp.NewRace"
+            android:label="@string/title_activity_new_race"
+            android:parentActivityName="com.example.myfirstapp.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.myfirstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.myfirstapp.Statistics"
+            android:label="@string/title_activity_statistics"
+            android:parentActivityName="com.example.myfirstapp.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.myfirstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.myfirstapp.GoCarting"
+            android:label="@string/title_activity_go_carting"
+            android:parentActivityName="com.example.myfirstapp.NewRace" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.myfirstapp.NewRace" />
+        </activity>
+        <activity
+            android:name="com.example.myfirstapp.FireInTheHome"
+            android:label="@string/title_activity_fire_in_the_home"
+            android:parentActivityName="com.example.myfirstapp.NewRace" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.myfirstapp.NewRace" />
+        </activity>
+        <activity
+            android:name="com.example.myfirstapp.LiveRace"
+            android:label="@string/title_activity_live_race"
+            android:parentActivityName="com.example.myfirstapp.NewRace" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.myfirstapp.NewRace" />
+        </activity>
+    </application>
+
+</manifest>
