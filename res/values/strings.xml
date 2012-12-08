@@ -19,7 +19,7 @@
     <string-array name="race_types">
         <item>Go Carting</item>
         <item>Run With Me</item>
-        <item >Rise And Shine!</item>
+        <item>Rise And Shine!</item>
     </string-array>
 
     <string name="gocarting_input_1">How many items?</string>
@@ -33,13 +33,17 @@
     <string name="title_activity_launch_live_race">LaunchLiveRace</string>
     <string name="waiting">Retrieving other racers...</string>
     <string name="riseandshine_input">Distance</string>
+
     <string-array name="distance_vals">
-        <item >3 Km</item>
-        <item >5 Km</item>
-        <item >10 Km</item>
-        <item >15 Km</item>
-        <item >21.6 Km</item>
-        <item >43.2 Km</item>
+        <item>3 Km</item>
+        <item>5 Km</item>
+        <item>10 Km</item>
+        <item>15 Km</item>
+        <item>21.6 Km</item>
+        <item>43.2 Km</item>
     </string-array>
+
+    <string name="title_activity_rise_and_shine">Rise And Shine!</string>
+    <string name="trueriseandshine_prompt">Estimated Duration</string>
 
 </resources>

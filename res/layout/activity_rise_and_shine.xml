@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RiseAndShine" >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RiseAndShine" >
+    <TextView android:id="@+id/rise_and_shine_prompt_xml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/trueriseandshine_prompt" />
+    
+    <EditText android:id="@+id/trueriseandshine_input_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/rise_and_shine_prompt_xml"
+        android:layout_alignBaseline="@id/rise_and_shine_prompt_xml"
+        android:singleLine="true"
+        android:inputType="numberDecimal"
+        android:hint="@string/riseandshine_input_1_defaultval" />
+    </RelativeLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/race_now"
+        android:onClick="startrace" 
+        />
+     
+</RelativeLayout>
