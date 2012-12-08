@@ -4,18 +4,40 @@
     android:layout_height="match_parent"
     tools:context=".FireInTheHome" >
 
-    <TextView
+    <!-- <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="@string/options_msg" />
+        android:text="@string/options_msg" /> -->
+    <RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    tools:context=".GoCarting" >
+    
+    <TextView android:id="@+id/riseandshine_input_1_prompt_xml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/gocarting_input_2" />
+    
+    <EditText android:id="@+id/riseandshine_input_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/riseandshine_input_1_prompt_xml"
+        android:layout_alignBaseline="@id/riseandshine_input_1_prompt_xml"
+        android:singleLine="true"
+        android:inputType="numberDecimal"
+        android:hint="@string/riseandshine_input_1_defaultval" />
+    </RelativeLayout>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="bottom"
-        android:layout_gravity = "bottom"
         android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
         android:text="@string/race_now"
         android:onClick="startrace" 
         />

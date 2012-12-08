@@ -21,6 +21,8 @@
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/gocarting_input_1_prompt_xml"
         android:layout_alignBaseline="@id/gocarting_input_1_prompt_xml"
+        android:singleLine="true"
+        android:inputType="numberDecimal"
         android:hint="@string/gocarting_input_1_defaultval" />
     
     <TextView android:id="@+id/gocarting_input_2_prompt_xml"
@@ -37,6 +39,8 @@
         android:layout_toRightOf="@id/gocarting_input_2_prompt_xml"
         android:layout_alignBaseline="@id/gocarting_input_2_prompt_xml"
         android:layout_below="@id/gocarting_input_1"
+        android:singleLine="true"
+        android:inputType="numberDecimal"
         android:hint="@string/gocarting_input_2_defaultval" />
     </RelativeLayout>
         
@@ -45,7 +49,7 @@
         android:layout_height="wrap_content"
         android:gravity="bottom"
         android:layout_centerHorizontal="true"
-        android:layout_gravity = "bottom"
+        android:layout_alignParentBottom="true"
         android:text="@string/race_now"
         android:onClick="startrace" 
         />

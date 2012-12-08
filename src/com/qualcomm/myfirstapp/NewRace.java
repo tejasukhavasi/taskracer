@@ -11,10 +11,11 @@ import android.widget.ListView;
 
 public class NewRace extends ListActivity{
 	
-	//Resources res = getResources();
-	String[] RACE_TYPES = new String[] {"Go carting", "Bed to Boots"};//res.getStringArray(R.array.race_types);//
+	String[] RACE_TYPES;//new String[] {"Go carting", "Bed to Boots"};//
 	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
+		Resources res = getResources();
+		RACE_TYPES =  res.getStringArray(R.array.race_types);
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, android.R.id.text1, RACE_TYPES);
 		setListAdapter(adapter);
 	}

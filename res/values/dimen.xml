@@ -2,5 +2,8 @@
 <resources>
     <dimen name="head_room">150dp</dimen>
     <dimen name="button_gap">10dp</dimen>
-    
+    <dimen name="racerDisplayHeight">90dp</dimen>
+    <dimen name="runnerIconWidth">80dp</dimen>
+    <dimen name="runnerIconHeight">80dp</dimen>
+    <dimen name="progressBarHeight">80dp</dimen>
 </resources>
