@@ -2,6 +2,7 @@ package com.qualcomm.myfirstapp;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.support.v4.app.NavUtils;
@@ -13,7 +14,10 @@ public class RaceResult extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_race_result);
 		// Show the Up button in the action bar.
-		getActionBar().setDisplayHomeAsUpEnabled(true);
+		//getActionBar().setDisplayHomeAsUpEnabled(true);
+
+		Intent intent = new Intent(this, HistoryActivity.class);
+        startActivity(intent);
 	}
 
 	@Override
