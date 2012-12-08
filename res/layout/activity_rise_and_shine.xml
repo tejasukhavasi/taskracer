@@ -19,6 +19,8 @@
     <EditText android:id="@+id/trueriseandshine_input_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        
+        
         android:layout_toRightOf="@id/rise_and_shine_prompt_xml"
         android:layout_alignBaseline="@id/rise_and_shine_prompt_xml"
         android:singleLine="true"
@@ -29,6 +31,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="bottom"
+          style="@style/ButtonText"
+        android:background="@drawable/green"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
         android:text="@string/race_now"

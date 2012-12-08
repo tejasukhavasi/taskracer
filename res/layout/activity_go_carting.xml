@@ -50,6 +50,8 @@
         android:gravity="bottom"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
+        style="@style/ButtonText"
+        android:background="@drawable/green"
         android:text="@string/race_now"
         android:onClick="startrace" 
         />
