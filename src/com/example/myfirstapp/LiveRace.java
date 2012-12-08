@@ -22,6 +22,10 @@ public class LiveRace extends Activity {
 		getMenuInflater().inflate(R.menu.activity_live_race, menu);
 		return true;
 	}
+	
+	public void onPause(){
+		super.onPause();
+	}
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {

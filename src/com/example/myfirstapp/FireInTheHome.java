@@ -24,6 +24,10 @@ public class FireInTheHome extends Activity {
 		getMenuInflater().inflate(R.menu.activity_fire_in_the_home, menu);
 		return true;
 	}
+	
+	public void onPause(){
+		super.onPause();
+	}
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {

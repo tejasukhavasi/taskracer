@@ -24,6 +24,10 @@ public class GoCarting extends Activity {
 		getMenuInflater().inflate(R.menu.activity_go_carting, menu);
 		return true;
 	}
+	
+	public void onPause(){
+		super.onPause();
+	}
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {

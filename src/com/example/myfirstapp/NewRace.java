@@ -3,17 +3,24 @@ package com.example.myfirstapp;
 
 import android.app.ListActivity;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 public class NewRace extends ListActivity{
-	String[] RACE_TYPES = new String[] {"Go carting", "Fire in the home"};
+	
+	//Resources res = getResources();
+	String[] RACE_TYPES = new String[] {"Go carting", "Bed to Boots"};//res.getStringArray(R.array.race_types);//
 	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, android.R.id.text1, RACE_TYPES);
 		setListAdapter(adapter);
+	}
+	
+	public void onPause(){
+		super.onPause();
 	}
 	
 	protected void onListItemClick(ListView l, View v, int position, long id) {
