@@ -24,5 +24,7 @@
     <string name="gocarting_input_1_defaultval">10</string>
     <string name="gocarting_input_2_defaultval">10</string>
     <string name="riseandshine_input_1_defaultval">60</string>
+    <string name="runner">Runner</string>
+    <string name="agespec">Age: 25</string>
 
 </resources>
