@@ -1,4 +1,6 @@
-package com.example.myfirstapp;
+package com.qualcomm.myfirstapp;
+
+import com.qualcomm.myfirstapp.R;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -6,12 +8,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.support.v4.app.NavUtils;
 
-public class LiveRace extends Activity {
+public class Statistics extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_live_race);
+		setContentView(R.layout.activity_statistics);
 		// Show the Up button in the action bar.
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 	}
@@ -19,12 +21,8 @@ public class LiveRace extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.activity_live_race, menu);
+		getMenuInflater().inflate(R.menu.activity_statistics, menu);
 		return true;
-	}
-	
-	public void onPause(){
-		super.onPause();
 	}
 
 	@Override

@@ -1,4 +1,4 @@
-package com.example.myfirstapp;
+package com.qualcomm.myfirstapp;
 
 
 import android.app.ListActivity;

@@ -1,4 +1,6 @@
-package com.example.myfirstapp;
+package com.qualcomm.myfirstapp;
+
+import com.qualcomm.myfirstapp.R;
 
 import android.os.Bundle;
 import android.app.Activity;

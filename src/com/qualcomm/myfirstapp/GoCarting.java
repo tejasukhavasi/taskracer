@@ -1,4 +1,6 @@
-package com.example.myfirstapp;
+package com.qualcomm.myfirstapp;
+
+import com.qualcomm.myfirstapp.R;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -33,6 +35,7 @@ public class GoCarting extends Activity {
 	
 	public void fillTextView(TextView tview, String str) {
 		tview.setText(str);
+		//getActionBar().setDisplayHomeAsUpEnabled(true);
 	}
 
 	@Override
