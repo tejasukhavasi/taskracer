@@ -38,14 +38,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
         <activity
             android:name="com.qualcomm.myfirstapp.MainActivity"
             android:label="@string/app_name" >
         </activity>
 
-        
-        
         <service android:name="com.qualcommlabs.usercontext.service.UserContextService" >
             <intent-filter>
                 <action android:name="com.qualcomm.myfirstapp.service.USER_CONTEXT_SERVICE" />
@@ -139,6 +136,14 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.qualcomm.myfirstapp.Statistics" />
+        </activity>
+        <activity
+            android:name="com.qualcomm.myfirstapp.RaceResult"
+            android:label="@string/title_activity_race_result"
+            android:parentActivityName="com.qualcomm.myfirstapp.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.qualcomm.myfirstapp.MainActivity" />
         </activity>
     </application>
 

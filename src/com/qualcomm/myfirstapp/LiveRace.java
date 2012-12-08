@@ -1,6 +1,7 @@
 package com.qualcomm.myfirstapp;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Handler;
@@ -21,6 +22,7 @@ public class LiveRace extends Activity {
     private int mProgress_you_Status = 0;
 
     private Handler mHandler = new Handler();
+    private int[] completed = new int[3];
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,7 @@ public class LiveRace extends Activity {
 		//getActionBar().setDisplayHomeAsUpEnabled(true);
 		
 		//Resources res = getResources();
+		completed[0] = 0; completed[1]=0; completed[2]=0;
 		
 		ImageView runner1 = (ImageView) findViewById(R.id.runner1);
 		TextView runner1_info = (TextView) findViewById(R.id.runner1_info);
@@ -67,6 +70,7 @@ public class LiveRace extends Activity {
                         }
                     });
                 }
+                completed[0] = 1;
             }
         }).start();
 		
@@ -82,6 +86,7 @@ public class LiveRace extends Activity {
                         }
                     });
                 }
+                completed[1] = 1;
             }
         }).start();
 		
@@ -97,8 +102,16 @@ public class LiveRace extends Activity {
                         }
                     });
                 }
+                completed[2] = 1;
+                while (!((completed[0] == 1) && (completed[1] == 1) && (completed[2] == 1)))
+        		{
+        		}
+
+        		Intent intent = new Intent(LiveRace.this, RaceResult.class);
+                startActivity(intent);
             }
         }).start();
+
 	}
 	
 	/*public int doWork(int current_status){
@@ -138,6 +151,8 @@ public class LiveRace extends Activity {
                }
                //return current_status + 12;      
         case 2:
+        		if (current_status + 3 >= 100)
+        			completed[id] = 1;
                return current_status + 3; 
         }
         return current_status;
