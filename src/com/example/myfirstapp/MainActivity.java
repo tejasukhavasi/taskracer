@@ -21,6 +21,10 @@ public class MainActivity extends Activity {
         return true;
     }
     
+    public void onPause(){
+    	super.onPause();
+    }
+    
     /** Called when the user clicks the 'Race me up!' button */
     public void race_me_up(View view) {
         // Do something in response to button
