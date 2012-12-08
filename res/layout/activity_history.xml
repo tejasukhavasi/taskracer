@@ -47,7 +47,7 @@
                    android:textSize="18dip"
                    android:textStyle="normal|bold" />
 
-               <TextView
+               <ImageView
                    android:id="@+id/tv_13"
                    android:layout_width="80dip"
                    android:layout_height="wrap_content"

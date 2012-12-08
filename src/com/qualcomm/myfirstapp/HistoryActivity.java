@@ -8,6 +8,7 @@ import android.support.v4.app.NavUtils;
 import android.util.TypedValue;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
 import android.widget.LinearLayout.LayoutParams;
 import android.widget.TableLayout;
 import android.widget.TableRow;
@@ -28,7 +29,8 @@ public class HistoryActivity extends Activity {
  void fillHistoryTable() {
 
         TableRow row;
-        TextView t1, t2, t3;
+        TextView t1, t2;
+        ImageView t3;
         //Converting to dip unit
         int dip = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,
                      (float) 1, getResources().getDisplayMetrics());
@@ -40,23 +42,26 @@ public class HistoryActivity extends Activity {
                // t1.setTextColor(getResources().getColor(R.color.black));
                t2 = new TextView(this);
                // t2.setTextColor(getResources().getColor(R.color.black));
-               t3 = new TextView(this);
+               t3 = new ImageView(this);
 
                t1.setText(History.Date[current]);
                t2.setText(History.Duration[current]);
-               t3.setText(History.Outcome[current]);
+               if(History.Outcome[current].contains("Lost"))
+            	   t3.setImageResource(R.drawable.thumbs_red);
+               else
+            	   t3.setImageResource(R.drawable.thumbs_green);
 
                t1.setTypeface(null, 1);
                t2.setTypeface(null, 1);
-               t3.setTypeface(null, 1);
+             //  t3.setTypeface(null, 1);
 
                t1.setTextSize(15);
                t2.setTextSize(15);
-               t3.setTextSize(15);
+              // t3.setTextSize(15);
 
                t1.setWidth(50 * dip);
                t2.setWidth(30 * dip);
-               t3.setWidth(70 * dip);
+               //t3.setWidth(70 * dip);
                //t1.setPadding(20*dip, 0, 0, 0);
                row.addView(t1);
                row.addView(t2);

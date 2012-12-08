@@ -36,7 +36,7 @@
             android:layout_marginTop="@dimen/button_gap"
             android:background="@drawable/green"
             android:gravity="center"
-            android:onClick="statistics"
+            android:onClick="openhistory"
             android:text="@string/Statistics" />
 
         
