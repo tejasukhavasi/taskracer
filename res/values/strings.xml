@@ -45,5 +45,7 @@
 
     <string name="title_activity_rise_and_shine">Rise And Shine!</string>
     <string name="trueriseandshine_prompt">Estimated Duration</string>
+    <string name="title_activity_history">History Activity</string>
+    <string name="history">History</string>
 
 </resources>

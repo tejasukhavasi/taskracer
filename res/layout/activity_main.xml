@@ -22,5 +22,16 @@
         android:gravity="center"
         android:text="@string/Statistics"
         android:onClick="statistics" /> 
+        
+    <Button
+        android:id="@+id/History"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/button_gap"
+        android:gravity="center"
+        android:text="@string/history"
+        android:onClick="openhistory" /> 
+        
+    
 
 </LinearLayout>

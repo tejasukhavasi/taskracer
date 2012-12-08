@@ -147,4 +147,10 @@ public class MainActivity extends Activity {
         startActivity(intent);
     }
     
+    public void openhistory(View view) {
+        // Do something in response to button
+    	Intent intent = new Intent(this, HistoryActivity.class);
+        startActivity(intent);
+    }
+    
 }

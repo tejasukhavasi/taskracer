@@ -125,6 +125,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.qualcomm.myfirstapp.NewRace" />
         </activity>
+        <activity
+            android:name="com.qualcomm.myfirstapp.HistoryActivity"
+            android:label="@string/title_activity_history"
+            android:parentActivityName="com.qualcomm.myfirstapp.Statistics" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.qualcomm.myfirstapp.Statistics" />
+        </activity>
     </application>
 
 </manifest>
