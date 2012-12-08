@@ -58,7 +58,7 @@ public class HttpListener implements Runnable {
         HttpClient httpclient = new DefaultHttpClient();
  
         // Prepare a request object
-        HttpGet httpget = new HttpGet("http://10.73.92.51/cgi-bin/db.pl"); 
+        HttpGet httpget = new HttpGet("http://10.62.72.53/cgi-bin/db.pl"); 
  
         // Execute the request
         HttpResponse response;
@@ -72,6 +72,7 @@ public class HttpListener implements Runnable {
             // If the response does not enclose an entity, there is no need
             // to worry about connection release
  
+            
             if (entity != null) {
  
                 // A Simple JSON Response Read

@@ -2,25 +2,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity" 
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+    
 
-    <Button
-        android:id="@+id/race_me"
-        android:layout_width="fill_parent"
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_marginTop="@dimen/head_room"
-        android:text="@string/race_me"
-        android:onClick="race_me_up"/>
+        android:src="@drawable/competition" />
 
-    <Button
-        android:id="@+id/Statistics"
-        android:layout_width="fill_parent"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/button_gap"
-        android:gravity="center"
-        android:text="@string/Statistics"
-        android:onClick="statistics" /> 
+        android:orientation="vertical" >
+        <Button
+            android:id="@+id/race_me"
+            style="@style/ButtonText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/button_gap"
+            android:background="@drawable/green"
+            android:gravity="center"
+            android:onClick="race_me_up"
+            android:text="@string/race_me" />
+        
+        
+        <Button
+            android:id="@+id/Statistics"
+            style="@style/ButtonText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/button_gap"
+            android:background="@drawable/green"
+            android:gravity="center"
+            android:onClick="statistics"
+            android:text="@string/Statistics" />
+
+        
+
+     </LinearLayout>
+   
+    
 
 </LinearLayout>

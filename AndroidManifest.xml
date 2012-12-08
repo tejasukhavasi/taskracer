@@ -30,7 +30,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.qualcomm.myfirstapp.MainActivity"
+            android:name="com.blundell.tut.ui.SplashActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -38,7 +38,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+        <activity
+            android:name="com.qualcomm.myfirstapp.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
 
+        
+        
         <service android:name="com.qualcommlabs.usercontext.service.UserContextService" >
             <intent-filter>
                 <action android:name="com.qualcomm.myfirstapp.service.USER_CONTEXT_SERVICE" />

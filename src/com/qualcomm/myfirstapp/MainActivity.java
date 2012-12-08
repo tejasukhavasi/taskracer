@@ -1,6 +1,7 @@
 package com.qualcomm.myfirstapp;
 
 import java.io.IOException;
+import java.util.Timer;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -40,6 +41,10 @@ import org.codehaus.jackson.map.ObjectWriter;
 
 public class MainActivity extends Activity {
 
+	private static final long DELAY = 3000;
+	private boolean scheduled = false;
+	private Timer splashTimer;
+	
 	private static String TAG="rkirti";
 	private ContextCoreConnector contextCoreConnector;
 	private ContextInterestsConnector contextInterestsConnector;
@@ -70,6 +75,9 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        
+        //setContentView(R.layout.);
+        
         setContentView(R.layout.activity_main);
         contextCoreConnector = ContextCoreConnectorFactory.get(this);
         contextInterestsConnector = ContextInterestsConnectorFactory.get(this);
