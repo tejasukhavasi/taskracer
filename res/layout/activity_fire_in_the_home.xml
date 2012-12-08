@@ -15,22 +15,29 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_centerVertical="true"
-    tools:context=".GoCarting" >
+    tools:context=".FireInTheHome" >
     
     <TextView android:id="@+id/riseandshine_input_1_prompt_xml"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="@string/gocarting_input_2" />
+        android:text="@string/riseandshine_input" />
     
-    <EditText android:id="@+id/riseandshine_input_1"
+    <!-- <EditText android:id="@+id/riseandshine_input_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/riseandshine_input_1_prompt_xml"
         android:layout_alignBaseline="@id/riseandshine_input_1_prompt_xml"
         android:singleLine="true"
         android:inputType="numberDecimal"
-        android:hint="@string/riseandshine_input_1_defaultval" />
+        android:hint="@string/riseandshine_input_1_defaultval" /> -->
+    <Spinner
+    android:id="@+id/distance_options"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:layout_alignTop="@id/riseandshine_input_1_prompt_xml"
+    android:layout_toRightOf="@id/riseandshine_input_1_prompt_xml"/>   
+     
     </RelativeLayout>
     <Button
         android:layout_width="wrap_content"

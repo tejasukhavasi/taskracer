@@ -1,10 +1,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@drawable/ic_launcher"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".LiveRace" >
+    <!-- android:background="@drawable/ic_launcher" -->
 
     <!-- <TextView
         android:layout_width="wrap_content"
@@ -18,7 +18,7 @@
 		    android:orientation="horizontal"
 		    android:layout_width="match_parent"
 		    android:layout_height="@dimen/racerDisplayHeight"
-		    android:layout_marginTop="10dp"
+		    android:layout_marginTop="20dp"
 		    tools:context=".LiveRace" >
 		        <ImageView android:id="@+id/runner1"
 		        android:layout_width="@dimen/runnerIconWidth"
@@ -26,7 +26,7 @@
 		        android:contentDescription="@string/runner"
 		        android:src="@drawable/malerunner" />
 		        
-		        <ProgressBar android:id ="@+id/sample_user"
+		        <ProgressBar android:id ="@+id/sample_user_1"
 	            android:layout_width="0dp"
 	            android:layout_weight="1"
 	           	android:layout_height="@dimen/progressBarHeight"
@@ -37,6 +37,67 @@
         </LinearLayout>
         
         <TextView android:id="@+id/runner1_info"
+		         android:layout_width="match_parent"
+		         android:layout_height="20dp"
+		         android:layout_marginLeft="10dp"
+		         android:text="@string/agespec"
+		         />
+        
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    xmlns:tools="http://schemas.android.com/tools"
+		    android:orientation="horizontal"
+		    android:layout_width="match_parent"
+		    android:layout_height="@dimen/racerDisplayHeight"
+		    android:layout_marginTop="45dp"
+		    tools:context=".LiveRace" >
+		        <ImageView android:id="@+id/runner2"
+		        android:layout_width="@dimen/runnerIconWidth"
+		        android:layout_height="@dimen/runnerIconHeight"
+		        android:contentDescription="@string/runner"
+		        android:src="@drawable/malerunner" />
+		        
+		        <ProgressBar android:id ="@+id/sample_user_2"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	           	android:layout_height="@dimen/progressBarHeight"
+	            android:layout_marginRight="5dp"
+	            android:layout_marginLeft="10dp"
+	            style="@android:style/Widget.ProgressBar.Horizontal"/>
+        
+        </LinearLayout>
+        
+        <TextView android:id="@+id/runner2_info"
+		         android:layout_width="match_parent"
+		         android:layout_height="20dp"
+		         android:layout_marginLeft="10dp"
+		         android:text="@string/agespec"
+		         />
+        
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    xmlns:tools="http://schemas.android.com/tools"
+		    android:orientation="horizontal"
+		    android:layout_width="match_parent"
+		    android:layout_height="@dimen/racerDisplayHeight"
+		    android:layout_marginTop="40dp"
+		    tools:context=".LiveRace" >
+		        <ImageView android:id="@+id/you"
+		        android:layout_width="@dimen/runnerIconWidth"
+		        android:layout_height="@dimen/runnerIconHeight"
+		        android:contentDescription="@string/runner"
+		        android:src="@drawable/malerunner" />
+		        
+		        <ProgressBar android:id ="@+id/sample_user_you"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	           	android:layout_height="@dimen/progressBarHeight"
+	            android:layout_marginRight="5dp"
+	            android:layout_marginLeft="10dp"
+	            android:progressDrawable="@drawable/progress1"
+	            style="@android:style/Widget.ProgressBar.Horizontal"/>
+        
+        </LinearLayout>
+        
+        <TextView android:id="@+id/you_info"
 		         android:layout_width="match_parent"
 		         android:layout_height="20dp"
 		         android:layout_marginLeft="10dp"

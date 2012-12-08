@@ -102,7 +102,8 @@
         <activity
             android:name="com.qualcomm.myfirstapp.LiveRace"
             android:label="@string/title_activity_live_race"
-            android:parentActivityName="com.qualcomm.myfirstapp.NewRace" >
+            android:parentActivityName="com.qualcomm.myfirstapp.NewRace"
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.qualcomm.myfirstapp.NewRace" />
@@ -122,6 +123,22 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.qualcomm.myfirstapp.NewRace" />
+        </activity>
+        <activity
+            android:name="com.qualcomm.myfirstapp.RiseAndShine"
+            android:label="@string/title_activity_rise_and_shine"
+            android:parentActivityName="com.qualcomm.myfirstapp.NewRace" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.qualcomm.myfirstapp.NewRace" />
+        </activity>
+        <activity
+            android:name="com.qualcomm.myfirstapp.HistoryActivity"
+            android:label="@string/title_activity_history"
+            android:parentActivityName="com.qualcomm.myfirstapp.Statistics" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.qualcomm.myfirstapp.Statistics" />
         </activity>
     </application>
 

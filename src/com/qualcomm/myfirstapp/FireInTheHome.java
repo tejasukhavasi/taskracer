@@ -1,21 +1,22 @@
 package com.qualcomm.myfirstapp;
 
-import com.qualcomm.myfirstapp.R;
-
-import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
-import android.content.res.Resources;
+import android.os.Bundle;
+import android.support.v4.app.NavUtils;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.EditText;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemSelectedListener;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 import android.widget.TextView;
-import android.support.v4.app.NavUtils;
 
-public class FireInTheHome extends Activity {
+public class FireInTheHome extends Activity implements OnItemSelectedListener {
 
+	private String user_input;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -23,12 +24,23 @@ public class FireInTheHome extends Activity {
 		// Show the Up button in the action bar.
 		//getActionBar().setDisplayHomeAsUpEnabled(true);
 		
-		Resources res = getResources();
+		/*Resources res = getResources();
 		TextView tview1 = (TextView) findViewById(R.id.riseandshine_input_1);
 		
 		fillTextView(tview1, res.getString(R.string.riseandshine_input_1_defaultval));
 		
-		tview1.setOnKeyListener(onEnterStartRace);
+		tview1.setOnKeyListener(onEnterStartRace);*/
+		
+		Spinner spinner = (Spinner) findViewById(R.id.distance_options);
+		// Create an ArrayAdapter using the string array and a default spinner layout
+		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+		        R.array.distance_vals, android.R.layout.simple_spinner_item);
+		// Specify the layout to use when the list of choices appears
+		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		// Apply the adapter to the spinner
+		spinner.setAdapter(adapter);
+		
+		spinner.setOnItemSelectedListener(this);
 	}
 	
 	public void fillTextView(TextView tview, String str) {
@@ -63,7 +75,7 @@ public class FireInTheHome extends Activity {
 		return super.onOptionsItemSelected(item);
 	}
 	public void startrace(View view) {
-		Resources res = getResources();
+		/*Resources res = getResources();
 		//Process the user input
     	EditText estTime_userin = (EditText) findViewById(R.id.riseandshine_input_1);
     	String estTime_text = estTime_userin.getText().toString();
@@ -75,7 +87,7 @@ public class FireInTheHome extends Activity {
     		//use default value in this case
     		String temp = res.getString(R.string.gocarting_input_1_defaultval);
     		estTime_val = Integer.parseInt(temp);
-    	}
+    	}*/
         // Do something in response to button
     	Intent intent = new Intent(this, LaunchLiveRace.class);
         startActivity(intent);
@@ -92,6 +104,18 @@ public class FireInTheHome extends Activity {
         }
                 return false;
         }
-};
+	};
+	
+	public void onItemSelected(AdapterView<?> parent, View view, 
+            int pos, long id) {
+        // An item was selected. You can retrieve the selected item using
+        // parent.getItemAtPosition(pos)
+		user_input = parent.getItemAtPosition(pos).toString();
+    }
+
+    public void onNothingSelected(AdapterView<?> parent) {
+        // Another interface callback
+    }
+
 
 }

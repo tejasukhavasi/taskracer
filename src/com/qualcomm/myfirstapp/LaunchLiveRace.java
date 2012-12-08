@@ -34,7 +34,7 @@ public class LaunchLiveRace extends Activity {
 		// Show the Up button in the action bar.
 		//getActionBar().setDisplayHomeAsUpEnabled(true);
 		RetrievingRacers retriever = new RetrievingRacers(this); 
-		retriever.execute("http://10.73.92.51/cgi-bin/db.pl");
+		retriever.execute("http://10.62.72.53/cgi-bin/db.pl");
 	}
 
 	@Override
@@ -111,7 +111,7 @@ class RetrievingRacers extends AsyncTask<String, Void, JSONObject> {
 
 	@Override
 	protected JSONObject doInBackground(String... params) {
-		String url = params[0];
+		/*String url = params[0];
 		HttpClient httpclient = new DefaultHttpClient();
 
 		// Prepare a request object
@@ -157,7 +157,7 @@ class RetrievingRacers extends AsyncTask<String, Void, JSONObject> {
 			// TODO Auto-generated catch block
 			//e.printStackTrace();
 		//}
-		return null;
+*/		return null;
 	}
 
 

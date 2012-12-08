@@ -9,7 +9,7 @@
     <string name="title_activity_new_race">New Race</string>
     <string name="title_activity_statistics">Statistics</string>
     <string name="title_activity_go_carting">Go Carting</string>
-    <string name="title_activity_fire_in_the_home">Rise and Shine!</string>
+    <string name="title_activity_fire_in_the_home">Run With Me</string>
     <string name="stats_msg">Statistics and history go here</string>
     <string name="options_msg">Options specific to this race go here</string>
     <string name="race_now">Race Now!</string>
@@ -18,7 +18,8 @@
 
     <string-array name="race_types">
         <item>Go Carting</item>
-        <item>Rise and Shine</item>
+        <item>Run With Me</item>
+        <item>Rise And Shine!</item>
     </string-array>
 
     <string name="gocarting_input_1">How many items?</string>
@@ -31,6 +32,21 @@
     <string name="title_activity_live_race_dynamic">LiveRace_dynamic</string>
     <string name="title_activity_launch_live_race">LaunchLiveRace</string>
     <string name="waiting">Retrieving other racers...</string>
+    <string name="riseandshine_input">Distance</string>
+
+    <string-array name="distance_vals">
+        <item>3 Km</item>
+        <item>5 Km</item>
+        <item>10 Km</item>
+        <item>15 Km</item>
+        <item>21.6 Km</item>
+        <item>43.2 Km</item>
+    </string-array>
+
+    <string name="title_activity_rise_and_shine">Rise And Shine!</string>
+    <string name="trueriseandshine_prompt">Estimated Duration</string>
+    <string name="title_activity_history">History Activity</string>
+    <string name="history">History</string>
 
     <string name="hello">Hello World, SplashActivity!</string>
     
