@@ -6,22 +6,23 @@
     <string name="race_me">Race me up!</string>
     <string name="Statistics">How did I do?</string>
     <string name="hello_world">Hello world!</string>
-    <string name="title_activity_new_race">NewRace</string>
+    <string name="title_activity_new_race">New Race</string>
     <string name="title_activity_statistics">Statistics</string>
-    <string name="title_activity_go_carting">GoCarting</string>
-    <string name="title_activity_fire_in_the_home">FireInTheHome</string>
+    <string name="title_activity_go_carting">Go Carting</string>
+    <string name="title_activity_fire_in_the_home">Rise and Shine!</string>
     <string name="stats_msg">Statistics and history go here</string>
     <string name="options_msg">Options specific to this race go here</string>
     <string name="race_now">Race Now!</string>
     <string name="race_page">The Live Race Page</string>
-    <string name="title_activity_live_race">LiveRace</string>
+    <string name="title_activity_live_race">Live Race</string>
     <string-array name="race_types">
         <item >Go Carting</item>
-        <item >Bed to Boots</item>
+        <item >Rise and Shine</item>
     </string-array>
     <string name="gocarting_input_1">How many items?</string>
     <string name="gocarting_input_2">Estimated duration</string>
     <string name="gocarting_input_1_defaultval">10</string>
     <string name="gocarting_input_2_defaultval">10</string>
+    <string name="riseandshine_input_1_defaultval">60</string>
 
 </resources>
