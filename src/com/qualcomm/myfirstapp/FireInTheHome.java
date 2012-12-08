@@ -21,7 +21,7 @@ public class FireInTheHome extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_fire_in_the_home);
 		// Show the Up button in the action bar.
-		getActionBar().setDisplayHomeAsUpEnabled(true);
+		//getActionBar().setDisplayHomeAsUpEnabled(true);
 		
 		Resources res = getResources();
 		TextView tview1 = (TextView) findViewById(R.id.riseandshine_input_1);
@@ -77,7 +77,7 @@ public class FireInTheHome extends Activity {
     		estTime_val = Integer.parseInt(temp);
     	}
         // Do something in response to button
-    	Intent intent = new Intent(this, LiveRace.class);
+    	Intent intent = new Intent(this, LaunchLiveRace.class);
         startActivity(intent);
     }
 	

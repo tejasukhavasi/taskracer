@@ -21,7 +21,7 @@ public class GoCarting extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_go_carting);
 		// Show the Up button in the action bar.
-		getActionBar().setDisplayHomeAsUpEnabled(true);
+		//getActionBar().setDisplayHomeAsUpEnabled(true);
 		
 		Resources res = getResources();
 		TextView tview1 = (TextView) findViewById(R.id.gocarting_input_1);
@@ -76,7 +76,7 @@ public class GoCarting extends Activity {
     	int estTime_val = Integer.parseInt(estTime_text);
     	
         // Do something in response to button
-    	Intent intent = new Intent(this, LiveRace.class);
+    	Intent intent = new Intent(this, LaunchLiveRace.class);
         startActivity(intent);
     }
     

@@ -8,34 +8,27 @@
         android:minSdkVersion="8"
         android:targetSdkVersion="8" />
 
-    
-         
-<uses-feature android:name="android.hardware.camera" />
-<uses-permission android:name="android.permission.CAMERA" />
-<uses-permission android:name="android.permission.INTERNET" />
-<uses-permission android:name="android.permission.READ_PHONE_STATE" />
-<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-<uses-permission android:name="android.permission.WAKE_LOCK" />
-<uses-permission android:name="android.permission.BATTERY_STATS" />
-<uses-permission android:name="android.permission.BLUETOOTH" />
-<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-<uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
-<uses-permission android:name="android.permission.WRITE_SETTINGS" />
- <uses-permission android:name="android.permission.VIBRATE" />
- <uses-permission android:name="android.permission.GET_TASKS" />
-    
-  
-    
-    
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-        
-            
-        
         <activity
             android:name="com.qualcomm.myfirstapp.MainActivity"
             android:label="@string/app_name" >
@@ -45,32 +38,28 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    
-        
-            
-    <service android:name="com.qualcommlabs.usercontext.service.UserContextService" >
-    <intent-filter> 
-    <action android:name="com.qualcomm.myfirstapp.service.USER_CONTEXT_SERVICE" />
-    </intent-filter>
-    </service>
 
- <receiver android:name="com.qualcommlabs.usercontext.service.UserContextServiceStartStopReceiver" android:enabled="true" >
-<intent-filter>
-<action android:name="android.intent.action.BOOT_COMPLETED" />
-</intent-filter>
-<intent-filter>
-<action android:name="android.intent.action.ACTION_SHUTDOWN" />
-</intent-filter>
-</receiver>
+        <service android:name="com.qualcommlabs.usercontext.service.UserContextService" >
+            <intent-filter>
+                <action android:name="com.qualcomm.myfirstapp.service.USER_CONTEXT_SERVICE" />
+            </intent-filter>
+        </service>
 
-<service android:name="com.qualcomm.denali.contextEngineService.DenaliContextEngineService" android:enabled="true" />
-        
-        
-        
-        
-        
-        
-        
+        <receiver
+            android:name="com.qualcommlabs.usercontext.service.UserContextServiceStartStopReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.qualcomm.denali.contextEngineService.DenaliContextEngineService"
+            android:enabled="true" />
+
         <activity
             android:name="com.qualcomm.myfirstapp.NewRace"
             android:label="@string/title_activity_new_race"
@@ -106,6 +95,22 @@
         <activity
             android:name="com.qualcomm.myfirstapp.LiveRace"
             android:label="@string/title_activity_live_race"
+            android:parentActivityName="com.qualcomm.myfirstapp.NewRace" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.qualcomm.myfirstapp.NewRace" />
+        </activity>
+        <activity
+            android:name="com.qualcomm.myfirstapp.LiveRace_dynamic"
+            android:label="@string/title_activity_live_race_dynamic"
+            android:parentActivityName="com.qualcomm.myfirstapp.NewRace" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.qualcomm.myfirstapp.NewRace" />
+        </activity>
+        <activity
+            android:name="com.qualcomm.myfirstapp.LaunchLiveRace"
+            android:label="@string/title_activity_launch_live_race"
             android:parentActivityName="com.qualcomm.myfirstapp.NewRace" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
