@@ -15,5 +15,13 @@
     <string name="race_now">Race Now!</string>
     <string name="race_page">The Live Race Page</string>
     <string name="title_activity_live_race">LiveRace</string>
+    <string-array name="race_types">
+        <item >Go Carting</item>
+        <item >Bed to Boots</item>
+    </string-array>
+    <string name="gocarting_input_1">How many items?</string>
+    <string name="gocarting_input_2">Estimated duration</string>
+    <string name="gocarting_input_1_defaultval">10</string>
+    <string name="gocarting_input_2_defaultval">10</string>
 
 </resources>

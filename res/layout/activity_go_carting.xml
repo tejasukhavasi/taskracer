@@ -4,12 +4,42 @@
     android:layout_height="match_parent"
     tools:context=".GoCarting" >
 
-    <TextView
+    <RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    tools:context=".GoCarting" >
+    <TextView android:id="@+id/gocarting_input_1_prompt_xml"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/options_msg" />
+        android:text="@string/gocarting_input_1" />
+    
+    <EditText android:id="@+id/gocarting_input_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/gocarting_input_1_prompt_xml"
+        android:layout_alignBaseline="@id/gocarting_input_1_prompt_xml"
+        android:hint="@string/gocarting_input_1_defaultval" />
+    
+    <TextView android:id="@+id/gocarting_input_2_prompt_xml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gocarting_input_1_prompt_xml"
+        android:layout_marginTop="@dimen/button_gap"
+        android:layout_centerHorizontal="true"
+        android:text="@string/gocarting_input_2" />
+    
+    <EditText android:id="@+id/gocarting_input_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/gocarting_input_2_prompt_xml"
+        android:layout_alignBaseline="@id/gocarting_input_2_prompt_xml"
+        android:layout_below="@id/gocarting_input_1"
+        android:hint="@string/gocarting_input_2_defaultval" />
+    </RelativeLayout>
+        
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
