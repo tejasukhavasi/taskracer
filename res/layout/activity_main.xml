@@ -50,7 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/button_gap"
         android:gravity="center"
-        android:src="@drawable/taskracer"
+        android:src="@drawable/tasktracer"
         android:text="@string/history"
         android:onClick="openhistory" /> 
         
