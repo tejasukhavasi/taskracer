@@ -95,7 +95,8 @@
         <activity
             android:name="com.qualcomm.myfirstapp.LiveRace"
             android:label="@string/title_activity_live_race"
-            android:parentActivityName="com.qualcomm.myfirstapp.NewRace" >
+            android:parentActivityName="com.qualcomm.myfirstapp.NewRace" 
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.qualcomm.myfirstapp.NewRace" />
