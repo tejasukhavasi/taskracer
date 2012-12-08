@@ -13,7 +13,7 @@
     <TextView android:id="@+id/gocarting_input_1_prompt_xml"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="75dp"
         android:text="@string/gocarting_input_1" />
     
     <EditText android:id="@+id/gocarting_input_1"
@@ -29,8 +29,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/gocarting_input_1_prompt_xml"
+        android:layout_alignRight="@id/gocarting_input_1_prompt_xml"
         android:layout_marginTop="@dimen/button_gap"
-        android:layout_centerHorizontal="true"
         android:text="@string/gocarting_input_2" />
     
     <EditText android:id="@+id/gocarting_input_2"

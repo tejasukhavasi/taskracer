@@ -47,11 +47,11 @@
     <string name="trueriseandshine_prompt">Estimated Duration</string>
     <string name="title_activity_history">History Activity</string>
     <string name="history">History</string>
-
     <string name="hello">Hello World, SplashActivity!</string>
-    
     <string name="activity_splash_title_line_one">LOADING</string>
     <string name="activity_splash_title_line_two">SPLASH SCREEN</string>
     <string name="activity_splash_title_line_three">TUTORIAL</string>
     <string name="activity_main_made_it">You did it!</string>
+    <string name="title_activity_race_result">RaceResult</string>
+
 </resources>

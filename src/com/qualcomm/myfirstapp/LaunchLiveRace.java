@@ -157,7 +157,15 @@ class RetrievingRacers extends AsyncTask<String, Void, JSONObject> {
 			// TODO Auto-generated catch block
 			//e.printStackTrace();
 		//}
-*/		return null;
+*/		
+		try 
+		{
+			Thread.sleep(2000);
+		}
+		catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		return null;
 	}
 
 

@@ -151,7 +151,7 @@ public class MainActivity extends Activity {
     /** Called when the user clicks the 'Statistics' button */
     public void statistics(View view) {
         // Do something in response to button
-    	Intent intent = new Intent(this, Statistics.class);
+    	Intent intent = new Intent(this, HistoryActivity.class);
         startActivity(intent);
     }
     
