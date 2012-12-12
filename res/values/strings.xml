@@ -26,13 +26,13 @@
     <string name="gocarting_input_2">Estimated duration</string>
     <string name="gocarting_input_1_defaultval">10</string>
     <string name="gocarting_input_2_defaultval">10</string>
-    <string name="riseandshine_input_1_defaultval">60</string>
+    <string name="runwithme_input_1_defaultval">60</string>
     <string name="runner">Runner</string>
     <string name="agespec">Age: 25</string>
     <string name="title_activity_live_race_dynamic">LiveRace_dynamic</string>
     <string name="title_activity_launch_live_race">LaunchLiveRace</string>
     <string name="waiting">Retrieving other racers...</string>
-    <string name="riseandshine_input">Distance</string>
+    <string name="runwithme_input">Distance</string>
 
     <string-array name="distance_vals">
         <item>3 Km</item>
@@ -44,7 +44,7 @@
     </string-array>
 
     <string name="title_activity_rise_and_shine">Rise And Shine!</string>
-    <string name="trueriseandshine_prompt">Estimated Duration</string>
+    <string name="truerunwithme_prompt">Estimated Duration</string>
     <string name="title_activity_history">History Activity</string>
     <string name="history">History</string>
     <string name="hello">Hello World, SplashActivity!</string>

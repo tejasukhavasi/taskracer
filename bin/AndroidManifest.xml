@@ -122,7 +122,7 @@
                 android:value="com.qualcomm.myfirstapp.NewRace" />
         </activity>
         <activity
-            android:name="com.qualcomm.myfirstapp.RiseAndShine"
+            android:name="com.qualcomm.myfirstapp.runwithme"
             android:label="@string/title_activity_rise_and_shine"
             android:parentActivityName="com.qualcomm.myfirstapp.NewRace" >
             <meta-data
