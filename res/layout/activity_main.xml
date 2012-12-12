@@ -1,27 +1,26 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
     
-
-    <ImageView
+    <ImageView 
         android:id="@+id/imageView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/competition" />
-
-    <LinearLayout
+        android:src="@drawable/competition"/>
+    
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical" >
+        android:id="@+id/button_layout"
+        android:layout_below="@id/imageView1">
+        
         <Button
             android:id="@+id/race_me"
             style="@style/ButtonText"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/button_gap"
             android:background="@drawable/green"
             android:gravity="center"
             android:onClick="race_me_up"
@@ -33,27 +32,22 @@
             style="@style/ButtonText"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/button_gap"
+            android:layout_below="@id/race_me"
             android:background="@drawable/green"
             android:gravity="center"
             android:onClick="openhistory"
             android:text="@string/Statistics" />
-
         
-
-     </LinearLayout>
-   
-        
+    </RelativeLayout>
+    
     <ImageButton
         android:id="@+id/History"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/button_gap"
+        android:layout_below="@id/button_layout"
         android:gravity="center"
         android:src="@drawable/tasktracer"
         android:text="@string/history"
         android:onClick="openhistory" /> 
-        
     
-
-</LinearLayout>
+</RelativeLayout>

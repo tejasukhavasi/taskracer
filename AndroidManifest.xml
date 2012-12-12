@@ -89,7 +89,7 @@
                 android:value="com.qualcomm.myfirstapp.NewRace" />
         </activity>
         <activity
-            android:name="com.qualcomm.myfirstapp.FireInTheHome"
+            android:name="com.qualcomm.myfirstapp.RunWithMe"
             android:label="@string/title_activity_fire_in_the_home"
             android:parentActivityName="com.qualcomm.myfirstapp.NewRace" >
             <meta-data

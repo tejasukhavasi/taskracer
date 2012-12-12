@@ -37,7 +37,7 @@ public class NewRace extends ListActivity{
 	    }
 	    if (RACE_TYPES[1].equals(pen))
 	    {
-	    	Intent intent = new Intent(v.getContext(), FireInTheHome.class);
+	    	Intent intent = new Intent(v.getContext(), RunWithMe.class);
 	        startActivity(intent);
 	    }
 	    if (RACE_TYPES[2].equals(pen))
